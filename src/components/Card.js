@@ -2,11 +2,12 @@ import React from 'react';
 import {View,StyleSheet} from 'react-native';
 import CardSection from './CardSection';
 
+
 const Card=(props)=>{
+    // console.log(props);
     return (
         <View style={styles.containerStyle}>
             {props.children}
-            <CardSection />
         </View>
     );
 };
@@ -24,9 +25,7 @@ const styles= StyleSheet.create({
         elevation: 1,
         marginLeft: 5,
         marginRight: 5,
-        marginTop: 10,
-        justifyContent:"space-around",
-        flexDirection:'column'
+        marginTop: 10
         
     }
 })
